@@ -1,1 +1,1 @@
-# Balance-Changes-LoL
+# Insights to Riot's Champion Balance Methodologies
