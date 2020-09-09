@@ -1,8 +1,7 @@
 propTestAgg <- function(listOfDfs) {
   library(rvest)
-  library(epitools)
-  library(epibasix)
-  
+
+  counts <- 1
   champLoLists <- list()
   for (a in 1:length(listOfDfs)){
     link <- sprintf('https://na.leagueoflegends.com/en-us/news/game-updates/patch-10-%i-notes/', a)
@@ -64,9 +63,7 @@ propTestAgg <- function(listOfDfs) {
         }
         mergedDf[,sprintf('HO%s',HoValues[j])] <- round(unlist(listOfPValues),4)
       }
-      mergedDf <- subset(mergedDf, (HOgreaterequal > 0.05 | HOlessequal > 0.05) & HOequal > 0.05)
-      rownames(mergedDf) <- NULL 
-      
+
       mergedDfList[[b]] <- mergedDf
       balancedDfList[[b]] <- balancedDf
       
@@ -76,20 +73,24 @@ propTestAgg <- function(listOfDfs) {
       riskEst <- list()
       riskLowerCI <- list()
       riskUpperCI <- list()
+      counts <- counts + 1
+      print(counts)
       
-      for (f in 1:length(riskDf[,1])){
-        standardError <- sqrt((riskDf[f,2]*(1-riskDf[f,2]))/riskDf[f,3] + (riskDf[f,5]*(1-riskDf[f,5]))/riskDf[f,6])
-        riskDifference <- riskDf[f,2] - riskDf[f,5]
-        riskLower <- riskDifference - standardError
-        riskUpper <- riskDifference + standardError
-        riskEst[[f]] <- riskDifference
-        riskLowerCI[[f]] <- riskLower
-        riskUpperCI[[f]] <- riskUpper
+      if (length(riskDf[,1])>0){
+        for (f in 1:length(riskDf[,1])){
+          standardError <- sqrt((riskDf[f,2]*(1-riskDf[f,2]))/riskDf[f,3] + (riskDf[f,5]*(1-riskDf[f,5]))/riskDf[f,6])
+          riskDifference <- riskDf[f,2] - riskDf[f,5]
+          riskLower <- riskDifference - standardError
+          riskUpper <- riskDifference + standardError
+          riskEst[[f]] <- riskDifference
+          riskLowerCI[[f]] <- riskLower
+          riskUpperCI[[f]] <- riskUpper
+        }
+        riskDf$riskDifference <- round(unlist(riskEst),4)
+        riskDf$riskLower <- round(unlist(riskLowerCI),4)
+        riskDf$riskUpper <- round(unlist(riskUpperCI),4)
       }
-      riskDf$riskDifference <- round(unlist(riskEst),4)
-      riskDf$riskLower <- round(unlist(riskLowerCI),4)
-      riskDf$riskUpper <- round(unlist(riskUpperCI),4)
-      
+
       riskDfList[[b]] <- riskDf
       
       mcNemarPs <- list()
@@ -97,7 +98,6 @@ propTestAgg <- function(listOfDfs) {
       upperBoundLists <- list()
       listPChi <- list()
 
-      
       for (g in 1:length(balancedDf[,1])){
         compareDf <- rbind(balancedDf[g,], mergedDf[,names(balancedDf)])
         
