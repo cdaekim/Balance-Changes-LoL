@@ -1,0 +1,7 @@
+"BottomRisk10.champName","BottomRisk10.winRate.x","BottomRisk10.gamesPlayed.x","BottomRisk10.gamesWon.x","BottomRisk10.winRate.y","BottomRisk10.gamesPlayed.y","BottomRisk10.gamesWon.y","BottomRisk10.HOlessequal","BottomRisk10.HOgreaterequal","BottomRisk10.HOequal","BottomRisk10.riskDifference","BottomRisk10.riskLower","BottomRisk10.riskUpper"
+"Corki",0.4779,30181,14423,0.466,23754,11069,0.997,0.003,0.006,0.0119,0.0076,0.0162
+"Quinn",0.5007,39640,19848,0.4848,29516,14309,1,0,0,0.0159,0.0121,0.0197
+"Taliyah",0.5315,15499,8238,0.5193,11896,6178,0.9773,0.0227,0.0453,0.0122,0.0061,0.0183
+"Veigar",0.5264,100930,53130,0.52,77300,40196,0.9964,0.0036,0.0073,0.0064,0.004,0.0088
+"Yasuo",0.5346,454784,243128,0.529,395808,209382,1,0,0,0.0056,0.0045,0.0067
+"Ziggs",0.528,115637,61056,0.5153,70149,36148,1,0,0,0.0127,0.0103,0.0151

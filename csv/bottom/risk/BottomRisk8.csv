@@ -1,0 +1,7 @@
+"BottomRisk8.champName","BottomRisk8.winRate.x","BottomRisk8.gamesPlayed.x","BottomRisk8.gamesWon.x","BottomRisk8.winRate.y","BottomRisk8.gamesPlayed.y","BottomRisk8.gamesWon.y","BottomRisk8.HOlessequal","BottomRisk8.HOgreaterequal","BottomRisk8.HOequal","BottomRisk8.riskDifference","BottomRisk8.riskLower","BottomRisk8.riskUpper"
+"Caitlyn",0.5022,3934300,1975805,0.5003,3728121,1865179,1,0,0,0.0019,0.0015,0.0023
+"Cassiopeia",0.5365,109729,58870,0.5319,133420,70966,0.9882,0.0118,0.0235,0.0046,0.0026,0.0066
+"Draven",0.497,963765,478991,0.5002,914204,457285,0,1,0,-0.0032,-0.0039,-0.0025
+"Kai'Sa",0.4724,2632075,1243392,0.4733,2380280,1126587,0.0219,0.9781,0.0438,-9e-04,-0.0013,-5e-04
+"Miss Fortune",0.5204,4431960,2306392,0.5197,4251910,2209718,0.9805,0.0195,0.039,7e-04,4e-04,0.001
+"Sivir",0.503,598143,300866,0.5011,618972,310167,0.9819,0.0181,0.0361,0.0019,0.001,0.0028

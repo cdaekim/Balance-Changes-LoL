@@ -1,0 +1,8 @@
+"BottomRisk7.champName","BottomRisk7.winRate.x","BottomRisk7.gamesPlayed.x","BottomRisk7.gamesWon.x","BottomRisk7.winRate.y","BottomRisk7.gamesPlayed.y","BottomRisk7.gamesWon.y","BottomRisk7.HOlessequal","BottomRisk7.HOgreaterequal","BottomRisk7.HOequal","BottomRisk7.riskDifference","BottomRisk7.riskLower","BottomRisk7.riskUpper"
+"Caitlyn",0.5029,4048416,2035948,0.5022,3934300,1975805,0.976,0.024,0.048,7e-04,3e-04,0.0011
+"Draven",0.4983,986026,491337,0.497,963765,478991,0.9653,0.0347,0.0694,0.0013,6e-04,0.002
+"Ezreal",0.4851,4487386,2176831,0.4869,4506839,2194380,0,1,0,-0.0018,-0.0021,-0.0015
+"Jhin",0.5183,3156246,1635882,0.516,3076039,1587236,1,0,0,0.0023,0.0019,0.0027
+"Lucian",0.4876,2592655,1264179,0.4838,2466944,1193508,1,0,0,0.0038,0.0034,0.0042
+"Miss Fortune",0.5218,4417391,2304995,0.5204,4431960,2306392,1,0,0,0.0014,0.0011,0.0017
+"Taliyah",0.5251,19739,10365,0.5114,16638,8509,0.9954,0.0046,0.0093,0.0137,0.0084,0.019
