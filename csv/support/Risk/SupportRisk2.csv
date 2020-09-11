@@ -1,0 +1,9 @@
+"SupportRisk2.champName","SupportRisk2.winRate.x","SupportRisk2.gamesPlayed.x","SupportRisk2.gamesWon.x","SupportRisk2.winRate.y","SupportRisk2.gamesPlayed.y","SupportRisk2.gamesWon.y","SupportRisk2.HOlessequal","SupportRisk2.HOgreaterequal","SupportRisk2.HOequal","SupportRisk2.riskDifference","SupportRisk2.riskLower","SupportRisk2.riskUpper"
+"Anivia",0.4463,31295,13967,0.4535,36727,16656,0.0298,0.9702,0.0597,-0.0072,-0.011,-0.0034
+"Bard",0.5124,514877,263823,0.5157,675341,348273,2e-04,0.9998,4e-04,-0.0033,-0.0042,-0.0024
+"Blitzcrank",0.5229,1953264,1021362,0.5253,2233637,1173330,0,1,0,-0.0024,-0.0029,-0.0019
+"Braum",0.486,654535,318104,0.4841,752725,364394,0.9878,0.0122,0.0245,0.0019,0.0011,0.0027
+"Soraka",0.5176,1173889,607605,0.5222,1501506,784086,0,1,0,-0.0046,-0.0052,-0.004
+"Tahm Kench",0.4603,149734,68923,0.4521,154000,69623,1,0,0,0.0082,0.0064,0.01
+"Xerath",0.498,385205,191832,0.4959,422642,209588,0.9703,0.0297,0.0593,0.0021,0.001,0.0032
+"Zilean",0.514,358509,184274,0.5163,399532,206278,0.0228,0.9772,0.0456,-0.0023,-0.0034,-0.0012
