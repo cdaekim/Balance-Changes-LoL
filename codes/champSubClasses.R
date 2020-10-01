@@ -29,3 +29,5 @@ filteringWords <- function(x) {
 }
 names(delimitedChamps) <- sapply(champSubClasses, filteringWords)
 champsSubclasses <- stack(setNames(delimitedChamps, names(delimitedChamps)))
+champsSubclasses[122,1] <- 'Nunu'
+write.csv(champsSubclasses, 'champsSubclasses.csv')
